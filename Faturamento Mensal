@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+ 
+    double faturamento_sp = 67836.43;
+    double faturamento_rj = 36678.66;
+    double faturamento_mg = 29229.88;
+    double faturamento_es = 27165.48;
+    double faturamento_outros = 19849.53;
+
+    double faturamento_total = faturamento_sp + faturamento_rj + faturamento_mg + faturamento_es + faturamento_outros;
+
+    double percentual_sp = (faturamento_sp / faturamento_total) * 100;
+    double percentual_rj = (faturamento_rj / faturamento_total) * 100;
+    double percentual_mg = (faturamento_mg / faturamento_total) * 100;
+    double percentual_es = (faturamento_es / faturamento_total) * 100;
+    double percentual_outros = (faturamento_outros / faturamento_total) * 100;
+
+
+    printf("Faturamento total: R$ %.2f\n", faturamento_total);
+    printf("Percentual de SP: %.2f%%\n", percentual_sp);
+    printf("Percentual de RJ: %.2f%%\n", percentual_rj);
+    printf("Percentual de MG: %.2f%%\n", percentual_mg);
+    printf("Percentual de ES: %.2f%%\n", percentual_es);
+    printf("Percentual de Outros: %.2f%%\n", percentual_outros);
+    printf("Percentual total: 100.00%%\n");
+
+    return 0;
+}
